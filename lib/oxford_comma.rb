@@ -1,6 +1,6 @@
 def oxford_comma(array)
 	last = []
-  if array.size <= 1
+  if array.length <= 1
     puts array
   else
   	last << "and #{array.pop}"
