@@ -1,12 +1,12 @@
 def oxford_comma(array)
 	last = []
 	if array.length == 1
-		puts array
+		return array
 	elsif array.length == 2
-		puts array.join(' and ')
+		return array.join(' and ')
 	else
 		last << "and #{array.pop}"
 		array.concat(last)
-		puts array.join(', ')
+		return array.join(', ')
 	end
 end
